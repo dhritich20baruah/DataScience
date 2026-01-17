@@ -1,0 +1,138 @@
+{
+  "chunks": [
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 0.0,
+      "end": 9.0,
+      "text": "Here we are! We are going to use all of the parts we covered so far to build a fairly simple circuit which we are going to beat to death."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 10.0,
+      "end": 18.0,
+      "text": "We are going to use a microchip called the 555 timer. You should have three of them in your kit. You look for the number 555, it will probably be NE555, but any 555 will do!"
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 24.0,
+      "end": 32.0,
+      "text": "As long as it has the 555 in there, you should be good to go. This is such a versatile chip and we are going to use it for all kinds of projects."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 32.0,
+      "end": 44.0,
+      "text": "Let's face it, you got into electronics because you wanted to make things light up or make noise. You're getting into robotics because you want to make things move. Well the 555 can help with all of that."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 44.0,
+      "end": 56.0,
+      "text": "A microchip is really just a large, pre-built electronic circuit that you put onto a microscopic piece of silicon with wires so you can hook up to it."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 56.0,
+      "end": 115.0,
+      "text": "Like I said, we're going to use the 555 right, left and center for all kinds of projects. We could actually build the circuit inside the 555 every single time, but it contains 15 resistors, 2 diodes and 25 transistors."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 112.0,
+      "end": 126.0,
+      "text": "Would you like to build that circuit every time? I wouldn't, not to mention the price of all those components. Even though they are cheap, it would still be several dollars, or instead we could drop in a microchip that you could buy as cheap as $0.10 a piece."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 126.0,
+      "end": 146.0,
+      "text": "Microchips in the dual-inline-plug-or-dip format can have any number of pins, which are wires connected to the circuit, on the inside of the chip. One end is usually marked by a half circle cut out of one end."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 150.0,
+      "end": 207.0,
+      "text": "Sometimes pin 1 is marked with a dimple. Usually the printing on the chip is the right side up if pin 1 is in the bottom left hand corner, but I have seen the printing upside down before. So put the semi-circle to the left, or the dimple to the bottom left, and the bottom left corner is now pin number 1. Now count in a counter-clockwise direction."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 222.0,
+      "end": 237.0,
+      "text": "1, 2, 3, 4, 5, 6, 7, 8. This chip has 14 pins. Always count in a counter-clockwise direction. So each pin connects to a different part of the internal circuit."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 242.0,
+      "end": 307.0,
+      "text": "On the 555, a resistor of your choice goes between positive and pin 7. A second resistor of your choice goes between pin 7 and pin 6, then a capacitor between pin 6 and the negative will also connect pin 2 to pin 6. There's a switch inside the chip that connects pin 7 to negative. Right now that switch is open, it's not connecting pin 7 to ground."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 312.0,
+      "end": 332.0,
+      "text": "So electrons start flowing through the resistors to the capacitor. See, if we hook up a capacitor to a resistor and then power it up, those electrons flood onto the capacitor plates, but at a slower controlled rate because the resistor resists the flow of current."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 332.0,
+      "end": 406.0,
+      "text": "The voltage on the capacitor will climb until it reaches supply voltage. So the larger the resistor, the longer it takes for that capacitor to charge up because you're limiting how many electrons can get onto it. And it can only stuff so many electrons onto its plates. So if we were to graph the voltage, it would look like this. It stops when it reaches the supply voltage. Inside the 555, there's a little circuit that monitors the voltage on pin 6."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 411.0,
+      "end": 444.0,
+      "text": "When that voltage gets high enough, pin 6 screams to the rest of the chip, okay, we're there, and then throws the switch on pin 7 which connects pin 7 to negative. There is a second switch which is connected to that switch, and it connects pin 3 to positive, the positive supply voltage. So the capacitor is holding a positive charge, and so it begins to discharge through resistor R2."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 499.0,
+      "end": 537.0,
+      "text": "Down to zero volts through the switch on pin 7. Pin 2, in the meantime, is monitoring the voltage on the capacitor as well, but it's looking for zero volts. So when the voltage gets low enough, pin 2 screams to the rest of the circuitry inside the chip, hey, we're at zero volts, hit it! It then throws open that switch on pin 7."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 547.0,
+      "end": 619.0,
+      "text": "There is now no connection between pin 7 and negative, and remember that switch is connected to the pin 3 as well, which connects pin 3 to negative. So now the circuit starts charging the capacitor again from the positive supply voltage through R1 and through R2. Eventually pin 6 sees a high enough voltage, he throws the switch on pin 7 which starts discharging the capacitor and also connects pin 3 to positive, etc."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 630.0,
+      "end": 713.0,
+      "text": "So as you can see, you get a pulse train out of pin 3, and the timing of those pulses is determined by you choosing the resistors and the capacitor. A bigger capacitor, or bigger resistors, makes a nice slow pulse rate. Smaller resistors, or a smaller capacitor, makes a fast pulse rate. So you can do all kinds of things with this pulse train now. The first thing we're going to do is use it to flash an LED."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 713.0,
+      "end": 757.0,
+      "text": "So here's the schematic drawing of the circuit we're going to build. Notice that the chip, represented by a square or rectangle, has the pins all over the place. This is the norm when it comes to schematics. I have seen some schematics where the chip outline was drawn and the pins in the schematic were located where they are in real life on the chip, but schematic diagrams are descriptive of the circuitry, not the components."
+    },
+    {
+      "number": "13",
+      "title": "555-led-flasher",
+      "start": 785.0,
+      "end": 797.0,
+      "text": "So right off the bat, in the schematic we've got pin 4 connected to pin 8, and the drawing shows them right beside each other. Obviously they are not in real life. Also, make note of how you can interpret the schematic."
+    }
+  ],
+  "text": "Here we are! We are going to use all of the parts we covered so far to build a fairly simple circuit which we are going to beat to death. We are going to use a microchip called the 555 timer. You should have three of them in your kit. You look for the number 555, it will probably be NE555, but any 555 will do! As long as it has the 555 in there, you should be good to go. This is such a versatile chip and we are going to use it for all kinds of projects. Let's face it, you got into electronics because you wanted to make things light up or make noise. You're getting into robotics because you want to make things move. Well the 555 can help with all of that. A microchip is really just a large, pre-built electronic circuit that you put onto a microscopic piece of silicon with wires so you can hook up to it. Like I said, we're going to use the 555 right, left and center for all kinds of projects. We could actually build the circuit inside the 555 every single time, but it contains 15 resistors, 2 diodes and 25 transistors. Would you like to build that circuit every time? I wouldn't, not to mention the price of all those components. Even though they are cheap, it would still be several dollars, or instead we could drop in a microchip that you could buy as cheap as $0.10 a piece. Microchips in the dual-inline-plug-or-dip format can have any number of pins, which are wires connected to the circuit, on the inside of the chip. One end is usually marked by a half circle cut out of one end. Sometimes pin 1 is marked with a dimple. Usually the printing on the chip is the right side up if pin 1 is in the bottom left hand corner, but I have seen the printing upside down before. So put the semi-circle to the left, or the dimple to the bottom left, and the bottom left corner is now pin number 1. Now count in a counter-clockwise direction. 1, 2, 3, 4, 5, 6, 7, 8. This chip has 14 pins. Always count in a counter-clockwise direction. So each pin connects to a different part of the internal circuit. On the 555, a resistor of your choice goes between positive and pin 7. A second resistor of your choice goes between pin 7 and pin 6, then a capacitor between pin 6 and the negative will also connect pin 2 to pin 6. There's a switch inside the chip that connects pin 7 to negative. Right now that switch is open, it's not connecting pin 7 to ground. So electrons start flowing through the resistors to the capacitor. See, if we hook up a capacitor to a resistor and then power it up, those electrons flood onto the capacitor plates, but at a slower controlled rate because the resistor resists the flow of current. The voltage on the capacitor will climb until it reaches supply voltage. So the larger the resistor, the longer it takes for that capacitor to charge up because you're limiting how many electrons can get onto it. And it can only stuff so many electrons onto its plates. So if we were to graph the voltage, it would look like this. It stops when it reaches the supply voltage. Inside the 555, there's a little circuit that monitors the voltage on pin 6. When that voltage gets high enough, pin 6 screams to the rest of the chip, okay, we're there, and then throws the switch on pin 7 which connects pin 7 to negative. There is a second switch which is connected to that switch, and it connects pin 3 to positive, the positive supply voltage. So the capacitor is holding a positive charge, and so it begins to discharge through resistor R2. Down to zero volts through the switch on pin 7. Pin 2, in the meantime, is monitoring the voltage on the capacitor as well, but it's looking for zero volts. So when the voltage gets low enough, pin 2 screams to the rest of the circuitry inside the chip, hey, we're at zero volts, hit it! It then throws open that switch on pin 7. There is now no connection between pin 7 and negative, and remember that switch is connected to the pin 3 as well, which connects pin 3 to negative. So now the circuit starts charging the capacitor again from the positive supply voltage through R1 and through R2. Eventually pin 6 sees a high enough voltage, he throws the switch on pin 7 which starts discharging the capacitor and also connects pin 3 to positive, etc. So as you can see, you get a pulse train out of pin 3, and the timing of those pulses is determined by you choosing the resistors and the capacitor. A bigger capacitor, or bigger resistors, makes a nice slow pulse rate. Smaller resistors, or a smaller capacitor, makes a fast pulse rate. So you can do all kinds of things with this pulse train now. The first thing we're going to do is use it to flash an LED. So here's the schematic drawing of the circuit we're going to build. Notice that the chip, represented by a square or rectangle, has the pins all over the place. This is the norm when it comes to schematics. I have seen some schematics where the chip outline was drawn and the pins in the schematic were located where they are in real life on the chip, but schematic diagrams are descriptive of the circuitry, not the components. So right off the bat, in the schematic we've got pin 4 connected to pin 8, and the drawing shows them right beside each other. Obviously they are not in real life. Also, make note of how you can interpret the schematic."
+}

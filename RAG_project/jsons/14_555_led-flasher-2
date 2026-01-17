@@ -1,0 +1,173 @@
+{
+  "chunks": [
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 0.0,
+      "end": 15.0,
+      "text": "connected to pin 8, but look where pin 8 is going. Pin 8 goes to the positive supply voltage. So pin 4 can be connected to pin 8 if you'd like, or you can connect pin 4 to the positive supply if you'd like."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 19.0,
+      "end": 31.0,
+      "text": "Either one is correct. So crack out your breadboards and parts, grab one of your 555 timer chips and locate pin number 1. Something I highly recommend doing is orienting your breadboard a certain way."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 34.0,
+      "end": 53.0,
+      "text": "Almost all schematics, including our present one, show positive voltage towards the top and negative or ground towards the bottom. I'll explain more detail later as to what ground is, but for the moment, that is the ground symbol, and until told otherwise, ground is the negative lead on your battery, or zero volts."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 57.0,
+      "end": 109.0,
+      "text": "So orient your board in this way. I like to use the far outside rails, and you'll notice that I'm putting the red outer power rail at the top, away from me, and the negative rail at the bottom."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 114.0,
+      "end": 130.0,
+      "text": "If you have one of these breadboards that does not have the power rails, no problem, designate a row on the left side for positive, and a row on the right side for negative, and only use those rows for power."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 132.0,
+      "end": 148.0,
+      "text": "So insert your 555 chip into the board somewhere, doesn't really matter where. These new chips will be hard to put in the first time because the manufacturers spread the pins ever so slightly."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 152.0,
+      "end": 207.0,
+      "text": "They do this for robotic assembly of electronics actually. With the pins spread like that, they put pressure on the insertion tool and get held in place. So you can just gently push the pins in ever so slightly, and you'll find they line up with the holes on the breadboard much better."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 217.0,
+      "end": 229.0,
+      "text": "My recommendation is to orient the board this way and don't ever change it, like turn it over. You'll be tempted to say turn the board around midway through your build because it seems easier to work on this side of the board."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 233.0,
+      "end": 242.0,
+      "text": "The problem is that you WILL forget you turned it around, and you'll continue wiring with the mindset that pin 1 is here when it's not. You turned it upside down. So you build half of your circuit upside down."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 247.0,
+      "end": 301.0,
+      "text": "So lock her down, don't turn the board around, keep it oriented the same way all the time with the positive up and the negative down, or if you're using the rail-less board, positive to the left and negative right."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 304.0,
+      "end": 315.0,
+      "text": "With any circuit, you always hook up the power last, so we're going to hook up the power to these rails, or on these boards, the rows you designated for power. We're just planning ahead."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 319.0,
+      "end": 342.0,
+      "text": "So the first two connections are pin 8 and pin 4. They both need to go to the positive rail or the positive row, so use a jumper wire to connect them to positive. You can connect pin 4 to pin 8 if you think that's easier."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 351.0,
+      "end": 417.0,
+      "text": "Next, connect pin 1 to negative with a jumper wire, and now connect a jumper wire from pin 2 to pin 6. You're going to need two resistors and a capacitor."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 419.0,
+      "end": 429.0,
+      "text": "Find a capacitor rated at 4.7 microfarads, so remember the micro is that funny Greek letter, it looks like a U with a tail on it. You'll also need two 10k resistors, what are the color codes for them?"
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 436.0,
+      "end": 446.0,
+      "text": "Brown, black, orange if it's a 3 banded resistor, brown, black, black, red if it's a 4 banded precision resistor. You can pause the video if you've got to go hunting for them and want to build along with me."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 451.0,
+      "end": 504.0,
+      "text": "Put one of the 10k from positive to pin 7. Now put the other 10k resistor from pin 7 to either pin 6 or pin 2 to connect them together, so either one is correct."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 518.0,
+      "end": 531.0,
+      "text": "Now take your capacitor and notice it is polarized, it has a positive lead and a negative lead. Take a look at the schematic. The capacitor needs to be connected between pin 2 and pin 1."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 538.0,
+      "end": 546.0,
+      "text": "Where do you think the positive lead of the capacitor needs to go? In this case, it's pretty obvious, pin 1 is actually connected to negative, so obviously the negative lead of the capacitor needs to go to that pin."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 551.0,
+      "end": 558.0,
+      "text": "OR, because pin 1 is connected to negative, you could put the negative lead to the negative rail. That's still correct because pin 1 is connected to negative."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 601.0,
+      "end": 617.0,
+      "text": "So insert your capacitor with the positive lead on pin 2, and the negative lead either into the row with pin 1, or the negative strip of your choice. It might be easier to put it to the negative strip as things get crowded around the chip."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 620.0,
+      "end": 639.0,
+      "text": "Remembering our LED is a diode, so we have to protect both it and the microchip with a resistor. Because if you just hook up the LED between pin 3 and negative, when the microchip tries to connect the LED to the positive battery, it's going to fry both the LED and the chip because the current will be more than the chip can handle too."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 643.0,
+      "end": 702.0,
+      "text": "So let's throw a 1K resistor in series with the LED out of pin 3. Connect a resistor from pin 3 to a row out here somewhere. Then connect the positive lead of your LED of choice to that row, and put the negative lead into the negative power rail."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 708.0,
+      "end": 726.0,
+      "text": "All that's left now is to hook up your battery, and if you did everything right, your LED should be flashing. If your circuit doesn't work right away, or even worse, if you smell something getting hot, immediately remove the power."
+    },
+    {
+      "number": "14",
+      "title": "555-led-flasher-part2",
+      "start": 730.0,
+      "end": 730.0,
+      "text": "If it's not working, fret not, that is the next lesson."
+    }
+  ],
+  "text": "connected to pin 8, but look where pin 8 is going. Pin 8 goes to the positive supply voltage. So pin 4 can be connected to pin 8 if you'd like, or you can connect pin 4 to the positive supply if you'd like. Either one is correct. So crack out your breadboards and parts, grab one of your 555 timer chips and locate pin number 1. Something I highly recommend doing is orienting your breadboard a certain way. Almost all schematics, including our present one, show positive voltage towards the top and negative or ground towards the bottom. I'll explain more detail later as to what ground is, but for the moment, that is the ground symbol, and until told otherwise, ground is the negative lead on your battery, or zero volts. So orient your board in this way. I like to use the far outside rails, and you'll notice that I'm putting the red outer power rail at the top, away from me, and the negative rail at the bottom. If you have one of these breadboards that does not have the power rails, no problem, designate a row on the left side for positive, and a row on the right side for negative, and only use those rows for power. So insert your 555 chip into the board somewhere, doesn't really matter where. These new chips will be hard to put in the first time because the manufacturers spread the pins ever so slightly. They do this for robotic assembly of electronics actually. With the pins spread like that, they put pressure on the insertion tool and get held in place. So you can just gently push the pins in ever so slightly, and you'll find they line up with the holes on the breadboard much better. My recommendation is to orient the board this way and don't ever change it, like turn it over. You'll be tempted to say turn the board around midway through your build because it seems easier to work on this side of the board. The problem is that you WILL forget you turned it around, and you'll continue wiring with the mindset that pin 1 is here when it's not. You turned it upside down. So you build half of your circuit upside down. So lock her down, don't turn the board around, keep it oriented the same way all the time with the positive up and the negative down, or if you're using the rail-less board, positive to the left and negative right. With any circuit, you always hook up the power last, so we're going to hook up the power to these rails, or on these boards, the rows you designated for power. We're just planning ahead. So the first two connections are pin 8 and pin 4. They both need to go to the positive rail or the positive row, so use a jumper wire to connect them to positive. You can connect pin 4 to pin 8 if you think that's easier. Next, connect pin 1 to negative with a jumper wire, and now connect a jumper wire from pin 2 to pin 6. You're going to need two resistors and a capacitor. Find a capacitor rated at 4.7 microfarads, so remember the micro is that funny Greek letter, it looks like a U with a tail on it. You'll also need two 10k resistors, what are the color codes for them? Brown, black, orange if it's a 3 banded resistor, brown, black, black, red if it's a 4 banded precision resistor. You can pause the video if you've got to go hunting for them and want to build along with me. Put one of the 10k from positive to pin 7. Now put the other 10k resistor from pin 7 to either pin 6 or pin 2 to connect them together, so either one is correct. Now take your capacitor and notice it is polarized, it has a positive lead and a negative lead. Take a look at the schematic. The capacitor needs to be connected between pin 2 and pin 1. Where do you think the positive lead of the capacitor needs to go? In this case, it's pretty obvious, pin 1 is actually connected to negative, so obviously the negative lead of the capacitor needs to go to that pin. OR, because pin 1 is connected to negative, you could put the negative lead to the negative rail. That's still correct because pin 1 is connected to negative. So insert your capacitor with the positive lead on pin 2, and the negative lead either into the row with pin 1, or the negative strip of your choice. It might be easier to put it to the negative strip as things get crowded around the chip. Remembering our LED is a diode, so we have to protect both it and the microchip with a resistor. Because if you just hook up the LED between pin 3 and negative, when the microchip tries to connect the LED to the positive battery, it's going to fry both the LED and the chip because the current will be more than the chip can handle too. So let's throw a 1K resistor in series with the LED out of pin 3. Connect a resistor from pin 3 to a row out here somewhere. Then connect the positive lead of your LED of choice to that row, and put the negative lead into the negative power rail. All that's left now is to hook up your battery, and if you did everything right, your LED should be flashing. If your circuit doesn't work right away, or even worse, if you smell something getting hot, immediately remove the power. If it's not working, fret not, that is the next lesson."
+}

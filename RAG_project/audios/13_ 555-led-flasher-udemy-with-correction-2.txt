@@ -1,0 +1,112 @@
+[00:00:00] connected to pin 8, but look where pin 8 is going.
+[00:00:04] Pin 8 goes to the positive supply voltage. So pin
+[00:00:09] 4 can be connected to pin 8 if you'd like, or you
+[00:00:13] can connect pin 4 to the positive supply if you'd
+[00:00:15] like. Either one is correct.
+[00:00:19] So crack out your breadboards and parts, grab one
+[00:00:22] of your 555 timer chips and locate pin number 1.
+[00:00:27] Something I highly recommend doing is orienting
+[00:00:31] your breadboard a certain way. Almost all
+[00:00:34] schematics, including our present one, show
+[00:00:37] positive voltage towards the top and negative or
+[00:00:40] ground towards the bottom. I'll explain more
+[00:00:43] detail later as to what ground is, but for the
+[00:00:46] moment, that is the ground symbol, and until told
+[00:00:51] otherwise, ground is the negative lead on your
+[00:00:53] battery, or zero volts.
+[00:00:57] So orient your board in this way. I like to use the
+[00:01:01] far outside rails, and you'll notice that I'm
+[00:01:04] putting the red outer power rail at the top, away
+[00:01:09] from me, and the negative rail at the bottom. If
+[00:01:14] you have one of these breadboards that does not
+[00:01:16] have the power rails, no problem, designate a row
+[00:01:22] on the left side for positive, and a row on the
+[00:01:26] right side for negative, and only use those rows
+[00:01:30] for power.
+[00:01:32] So insert your 555 chip into the board somewhere,
+[00:01:39] doesn't really matter where. These new chips will
+[00:01:45] be hard to put in the first time because the
+[00:01:48] manufacturers spread the pins ever so slightly.
+[00:01:52] They do this for robotic assembly of electronics
+[00:01:55] actually. With the pins spread like that, they put
+[00:01:59] pressure on the insertion tool and get held in
+[00:02:03] place. So you can just gently push the pins in
+[00:02:07] ever so slightly, and you'll find they line up with
+[00:02:11] the holes on the breadboard much better.
+[00:02:17] My recommendation is to orient the board this way
+[00:02:20] and don't ever change it, like turn it over. You'll
+[00:02:24] be tempted to say turn the board around midway
+[00:02:27] through your build because it seems easier to work
+[00:02:29] on this side of the board. The problem is that you
+[00:02:33] WILL forget you turned it around, and you'll
+[00:02:35] continue wiring with the mindset that pin 1 is
+[00:02:38] here when it's not. You turned it upside down. So
+[00:02:42] you build half of your circuit upside down.
+[00:02:47] So lock her down, don't turn the board around,
+[00:02:52] keep it oriented the same way all the time with
+[00:02:54] the positive up and the negative down, or if you're
+[00:02:58] using the rail-less board, positive to the left and
+[00:03:01] negative right.
+[00:03:04] With any circuit, you always hook up the power
+[00:03:06] last, so we're going to hook up the power to these
+[00:03:10] rails, or on these boards, the rows you designated
+[00:03:15] for power. We're just planning ahead.
+[00:03:19] So the first two connections are pin 8 and pin 4.
+[00:03:23] They both need to go to the positive rail or the
+[00:03:26] positive row, so use a jumper wire to connect them
+[00:03:35] to positive. You can connect pin 4 to pin 8 if you
+[00:03:42] think that's easier.
+[00:03:51] Next, connect pin 1 to negative with a jumper wire,
+[00:04:03] and now connect a jumper wire from pin 2 to pin 6.
+[00:04:17] You're going to need two resistors and a
+[00:04:19] capacitor. Find a capacitor rated at 4.7
+[00:04:23] microfarads, so remember the micro is that funny
+[00:04:26] Greek letter, it looks like a U with a tail on it.
+[00:04:29] You'll also need two 10k resistors, what are the
+[00:04:32] color codes for them? Brown, black, orange if it's
+[00:04:36] a 3 banded resistor, brown, black, black, red if
+[00:04:40] it's a 4 banded precision resistor. You can pause
+[00:04:44] the video if you've got to go hunting for them and
+[00:04:46] want to build along with me.
+[00:04:51] Put one of the 10k from positive to pin 7. Now put
+[00:05:01] the other 10k resistor from pin 7 to either pin 6
+[00:05:04] or pin 2 to connect them together, so either one is
+[00:05:08] correct.
+[00:05:18] Now take your capacitor and notice it is
+[00:05:21] polarized, it has a positive lead and a negative
+[00:05:24] lead. Take a look at the schematic. The capacitor
+[00:05:28] needs to be connected between pin 2 and pin 1.
+[00:05:31] Where do you think the positive lead of the
+[00:05:38] capacitor needs to go? In this case, it's pretty
+[00:05:41] obvious, pin 1 is actually connected to negative, so
+[00:05:43] obviously the negative lead of the capacitor needs
+[00:05:46] to go to that pin. OR, because pin 1 is connected
+[00:05:51] to negative, you could put the negative lead to the
+[00:05:55] negative rail. That's still correct because pin 1
+[00:05:58] is connected to negative. So insert your capacitor
+[00:06:01] with the positive lead on pin 2, and the negative
+[00:06:06] lead either into the row with pin 1, or the
+[00:06:11] negative strip of your choice. It might be easier
+[00:06:14] to put it to the negative strip as things get
+[00:06:17] crowded around the chip.
+[00:06:20] Remembering our LED is a diode, so we have to
+[00:06:23] protect both it and the microchip with a resistor.
+[00:06:27] Because if you just hook up the LED between pin 3
+[00:06:29] and negative, when the microchip tries to connect
+[00:06:31] the LED to the positive battery, it's going to fry
+[00:06:35] both the LED and the chip because the current will
+[00:06:39] be more than the chip can handle too. So let's
+[00:06:43] throw a 1K resistor in series with the LED out of
+[00:06:47] pin 3. Connect a resistor from pin 3 to a row out
+[00:06:55] here somewhere. Then connect the positive lead of
+[00:06:59] your LED of choice to that row, and put the
+[00:07:02] negative lead into the negative power rail.
+[00:07:08] All that's left now is to hook up your battery, and
+[00:07:11] if you did everything right, your LED should be
+[00:07:20] flashing.
+[00:07:21] If your circuit doesn't work right away, or even
+[00:07:24] worse, if you smell something getting hot,
+[00:07:26] immediately remove the power. If it's not working,
+[00:07:30] fret not, that is the next lesson.
+
+Transcribed with Speech-to-Text.cloud

@@ -1,0 +1,113 @@
+[00:00:00] Here we are! We are going to use all of the parts we
+[00:00:03] covered so far to build a fairly simple circuit which
+[00:00:06] we are going to beat to death. We are going to use a
+[00:00:10] microchip called the 555 timer. You should have
+[00:00:14] three of them in your kit. You look for the number
+[00:00:18] 555, it will probably be NE555, but any 555 will do!
+[00:00:24] As long as it has the 555 in there, you should be
+[00:00:27] good to go. This is such a versatile chip and we are
+[00:00:30] going to use it for all kinds of projects. Let's
+[00:00:32] face it, you got into electronics because you
+[00:00:35] wanted to make things light up or make noise. You're
+[00:00:37] getting into robotics because you want to make
+[00:00:39] things move. Well the 555 can help with all of that.
+[00:00:44] A microchip is really just a large, pre-built
+[00:00:48] electronic circuit that you put onto a microscopic
+[00:00:52] piece of silicon with wires so you can hook up to it.
+[00:00:56] Like I said, we're going to use the 555 right, left
+[00:00:58] and center for all kinds of projects. We could
+[00:01:01] actually build the circuit inside the 555 every
+[00:01:04] single time, but it contains 15 resistors, 2 diodes
+[00:01:08] and 25 transistors. Would you like to build that
+[00:01:12] circuit every time? I wouldn't, not to mention the
+[00:01:15] price of all those components. Even though they
+[00:01:18] are cheap, it would still be several dollars, or
+[00:01:21] instead we could drop in a microchip that you could
+[00:01:23] buy as cheap as $0.10 a piece.
+[00:01:26] Microchips in the dual-inline-plug-or-dip
+[00:01:30] format can have any number of pins, which are wires
+[00:01:36] connected to the circuit, on the inside of the
+[00:01:41] chip. One end is usually marked by a half circle
+[00:01:46] cut out of one end. Sometimes pin 1 is marked with
+[00:01:50] a dimple. Usually the printing on the chip is the
+[00:01:54] right side up if pin 1 is in the bottom left hand
+[00:01:57] corner, but I have seen the printing upside down
+[00:02:00] before. So put the semi-circle to the left, or the
+[00:02:07] dimple to the bottom left, and the bottom left
+[00:02:10] corner is now pin number 1. Now count in a
+[00:02:16] counter-clockwise direction. 1, 2, 3, 4, 5, 6, 7,
+[00:02:22] 8. This chip has 14 pins. Always count in a
+[00:02:30] counter-clockwise direction.
+[00:02:35] So each pin connects to a different part of the
+[00:02:37] internal circuit. On the 555, a resistor of your
+[00:02:42] choice goes between positive and pin 7. A second
+[00:02:47] resistor of your choice goes between pin 7 and pin
+[00:02:49] 6, then a capacitor between pin 6 and the negative
+[00:02:53] will also connect pin 2 to pin 6.
+[00:02:57] There's a switch inside the chip that connects pin
+[00:03:01] 7 to negative. Right now that switch is open, it's
+[00:03:07] not connecting pin 7 to ground. So electrons start
+[00:03:12] flowing through the resistors to the capacitor.
+[00:03:17] See, if we hook up a capacitor to a resistor and
+[00:03:20] then power it up, those electrons flood onto the
+[00:03:24] capacitor plates, but at a slower controlled rate
+[00:03:28] because the resistor resists the flow of current.
+[00:03:32] The voltage on the capacitor will climb until it
+[00:03:38] reaches supply voltage. So the larger the resistor,
+[00:03:42] the longer it takes for that capacitor to charge up
+[00:03:46] because you're limiting how many electrons can get
+[00:03:49] onto it. And it can only stuff so many electrons
+[00:03:54] onto its plates. So if we were to graph the voltage,
+[00:03:57] it would look like this. It stops when it reaches
+[00:04:01] the supply voltage.
+[00:04:03] Inside the 555, there's a little circuit that
+[00:04:06] monitors the voltage on pin 6. When that voltage
+[00:04:11] gets high enough, pin 6 screams to the rest of the
+[00:04:15] chip, okay, we're there, and then throws the switch
+[00:04:18] on pin 7 which connects pin 7 to negative.
+[00:04:29] There is a second switch which is connected to that
+[00:04:33] switch, and it connects pin 3 to positive, the
+[00:04:40] positive supply voltage. So the capacitor is holding
+[00:04:44] a positive charge, and so it begins to discharge
+[00:04:47] through resistor R2.
+[00:04:59] Down to zero volts through the switch on pin 7.
+[00:05:05] Pin 2, in the meantime, is monitoring the voltage
+[00:05:10] on the capacitor as well, but it's looking for zero
+[00:05:16] volts. So when the voltage gets low enough, pin 2
+[00:05:32] screams to the rest of the circuitry inside the
+[00:05:34] chip, hey, we're at zero volts, hit it! It then
+[00:05:37] throws open that switch on pin 7.
+[00:05:47] There is now no connection between pin 7 and
+[00:05:50] negative, and remember that switch is connected to
+[00:05:53] the pin 3 as well, which connects pin 3 to negative.
+[00:06:03] So now the circuit starts charging the capacitor
+[00:06:08] again from the positive supply voltage through R1
+[00:06:14] and through R2. Eventually pin 6 sees a high
+[00:06:19] enough voltage, he throws the switch on pin 7
+[00:06:22] which starts discharging the capacitor and also
+[00:06:28] connects pin 3 to positive, etc.
+[00:06:30] So as you can see, you get a pulse train out of
+[00:06:38] pin 3, and the timing of those pulses is
+[00:06:43] determined by you choosing the resistors and the
+[00:06:47] capacitor. A bigger capacitor, or bigger
+[00:06:52] resistors, makes a nice slow pulse rate. Smaller
+[00:06:57] resistors, or a smaller capacitor, makes a fast
+[00:07:02] pulse rate. So you can do all kinds of things with
+[00:07:06] this pulse train now. The first thing we're going
+[00:07:09] to do is use it to flash an LED.
+[00:07:13] So here's the schematic drawing of the circuit
+[00:07:15] we're going to build. Notice that the chip,
+[00:07:19] represented by a square or rectangle, has the pins
+[00:07:22] all over the place. This is the norm when it comes
+[00:07:26] to schematics. I have seen some schematics where
+[00:07:29] the chip outline was drawn and the pins in the
+[00:07:32] schematic were located where they are in real
+[00:07:34] life on the chip, but schematic diagrams are
+[00:07:37] descriptive of the circuitry, not the
+[00:07:41] components. So right off the bat, in the schematic
+[00:07:45] we've got pin 4 connected to pin 8, and the
+[00:07:48] drawing shows them right beside each other.
+[00:07:51] Obviously they are not in real life.
+[00:07:54] Also, make note of how you can interpret the
+[00:07:57] schematic.
+
