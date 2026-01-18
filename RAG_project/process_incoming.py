@@ -58,7 +58,7 @@ with open("prompt.txt", "w") as f:
 response = inference(prompt)
 print(response)
 
-with open("response.txt", "w") as f:
+with open("response.txt", "w", encoding="utf-8") as f:
     f.write(response)
 
 # for index, item in new_df.iterrows():

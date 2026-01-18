@@ -1,12 +1,17 @@
-The 555 timer is a versatile microchip that is a staple in the world of electronics, and we cover it in detail across two videos in this course!
+Hi there! Thatâ€™s a great question. Resistors are a fundamental part of the 555 timer circuit we are building, and I cover them in two different ways across both videos 13 and 14.
 
-Here is where you can find information about it:
+Here is exactly where you can find that information:
 
-1.  **Introduction and Identification (Video #13: "555-led-flasher"):**
-    *   Starting at **00:10**, I introduce the chip and mention that you should have three of them in your kit. I explain that while the chip is usually labeled **NE555**, any 555 variant will work for our projects.
-    *   From **00:32 to 00:44**, I talk about why this chip is so popular: it’s the key to making LEDs light up, creating noise, or even making things move in robotics. If you want to understand its practical applications, this is the best place to start.
+**1. Theoretical Explanation & Function (Video 13)**
+In the video titled **"555-led-flasher" (Video #13)**, I spend quite a bit of time explaining how resistors work within the circuit:
+*   **From 04:02 to 08:57:** I explain where to place the resistors (between the positive rail, pin 7, and pin 6). I also go into detail about how the resistor "resists" the flow of current to control how fast the capacitor charges.
+*   **From 09:07 to 13:17:** I wrap up by explaining how the size of the resistor directly affects your resultsâ€”specifically, how **larger resistors** create a slower pulse and **smaller resistors** create a faster pulse.
 
-2.  **Getting Started with the Hardware (Video #14: "555-led-flasher-part2"):**
-    *   Once you’re ready to start building, jump to **00:19** in this video. I'll guide you through the physical setup, including how to orient your breadboard and, most importantly, how to **locate Pin 1** on the chip so you can wire it correctly.
+**2. Practical Selection & Color Codes (Video 14)**
+In the follow-up video, **"555-led-flasher-part2" (Video #14)**, we get more hands-on:
+*   **From 05:04 to 07:26:** I talk about the specific components you need for the build. I mention that you'll need **two 10k resistors** and, importantly, I explain how to identify them using their **color codes** (Brown, Black, Orange for standard, or Brown, Black, Black, Red for precision resistors).
 
-I recommend starting with **Video #13** to get a feel for what the chip does before moving on to the hands-on assembly in **Video #14**. Happy building!
+**My recommendation:** 
+If you want to understand **why** we use resistors to control timing, go to **Video 13 at the 4-minute mark**. If you are ready to start building and need help **identifying** the right resistors in your kit, jump to **Video 14 at the 5-minute mark**.
+
+Happy building! Let me know if you have any other questions about the components.
