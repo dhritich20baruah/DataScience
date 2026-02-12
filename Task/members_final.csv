@@ -1,0 +1,5 @@
+name,email,signup_date,plan,notes,is_multi_plan
+Alice Wonderland,alice@wonder.land,7/7/2023,Plan C,VIP,FALSE
+John Doe,j.doe+filter@gmail.com,1/22/2023,Plan A,,FALSE
+J4ne Smith,jane.smith@yahoo.com,12/2/2023,Plan B,,TRUE
+"Doe, John",john.doe@gmail.com,1/20/2023,Plan B,Phone signup,TRUE
